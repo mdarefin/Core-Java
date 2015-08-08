@@ -14,11 +14,19 @@ public class CnnEmployee {
 	public static void main(String[] args) {
 		
 		
+		EmployeeInfo empOne = new EmployeeInfo("Peter Parker","New York",1);
+		empOne.setBenefit("Healt Insurance");
+		empOne.setDepartment("Photography");
+		empOne.toString();
 		
-		
-		
-		
-		
+		Salary peterSalary = new Salary("Peter Parker",  1, 3600.00);
+	    System.out.println("Call mailCheck using Salary reference --");
+	    peterSalary.mailCheck();
+	    peterSalary.setBonus(.10);
+	    peterSalary.setYearOfEmployeement(10);
+	    peterSalary.getBonus();
+	    peterSalary.toString();
+	    
 
 	}
 
