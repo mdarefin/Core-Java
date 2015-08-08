@@ -58,20 +58,20 @@ public class Sort {
 		return array;
 	}
 
-	public int[] bucketSort( int[] array,int max) {
+	public int[] bucketSort(int[] array, int max) {
 
 		int[] list = new int[max + 1];
-        int[] sorted_sequence = new int[array.length];
- 
-        for (int i = 0; i < array.length; i++)
-            list[array[i]]++;
- 
-        int outPos = 0;
-        for (int i = 0; i < list.length; i++)
-            for (int j = 0; j < list[i]; j++)
-                sorted_sequence[outPos++] = i;
- 
-        return sorted_sequence;
+		int[] sorted_sequence = new int[array.length];
+
+		for (int i = 0; i < array.length; i++)
+			list[array[i]]++;
+
+		int outPos = 0;
+		for (int i = 0; i < list.length; i++)
+			for (int j = 0; j < list[i]; j++)
+				sorted_sequence[outPos++] = i;
+
+		return sorted_sequence;
 	}
 
 	public int[] shellSort(int[] array) {

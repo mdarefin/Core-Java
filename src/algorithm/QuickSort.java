@@ -5,14 +5,15 @@ public class QuickSort {
 	private int quickSortArray[];
 	private int length;
 
-	public void sort(int[] inputArr) {
+	public int[] sort(int[] inputArr) {
 
 		if (inputArr == null || inputArr.length == 0) {
-			return;
+
 		}
 		this.quickSortArray = inputArr;
 		length = inputArr.length;
 		quickSort(0, length - 1);
+		return inputArr;
 	}
 
 	private void quickSort(int lowerIndex, int higherIndex) {
@@ -23,7 +24,7 @@ public class QuickSort {
 		int pivot = quickSortArray[lowerIndex + (higherIndex - lowerIndex) / 2];
 		// Divide into two arrays
 		while (i <= j) {
-			
+
 			while (quickSortArray[i] < pivot) {
 				i++;
 			}

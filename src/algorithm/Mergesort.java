@@ -5,11 +5,12 @@ public class Mergesort {
 	private int[] helperArray;
 	private int lenghts;
 
-	public void sort(int[] values) {
+	public int[] sort(int[] values) {
 		this.numberArray = values;
 		lenghts = values.length;
 		this.helperArray = new int[lenghts];
 		mergesort(0, lenghts - 1);
+		return values;
 	}
 
 	private void mergesort(int low, int high) {
