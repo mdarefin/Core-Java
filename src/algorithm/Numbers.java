@@ -12,7 +12,7 @@ public class Numbers {
 
 	public static void main(String[] args) {
 
-		int[] num = new int[10];
+		int[] num = new int[100];
 
 		Random rand = new Random();
 		int maxForBucketSort = 0;

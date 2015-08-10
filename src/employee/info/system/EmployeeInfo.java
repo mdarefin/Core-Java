@@ -1,6 +1,6 @@
 package employee.info.system;
 
-public class EmployeeInfo implements Employee {
+public class EmployeeInfo extends EmployeeCommonFeature implements Employee {
 
 	/*
 	 * This class can be implemented from Employee interface then add additional
@@ -25,26 +25,27 @@ public class EmployeeInfo implements Employee {
 	private String address;
 	private int employeeID;
 
-	//default constructor
-	public EmployeeInfo() {
-
+	// default constructor
+	public EmployeeInfo(String name, String string) {
+		super(name, string);
 	}
-	//constructor to get employee basic information
-	public EmployeeInfo(String name, String address, int employeeID) {
-		this.name = name;
-		this.address = address;
-		this.employeeID = employeeID;
+	
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
 
-	public EmployeeInfo(String name, int employeeId) {
-		this.name = name;
-		this.employeeID = employeeId;
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public void setBenefit(String benefit) {
+		this.benefit = benefit;
 	}
 
 	public void setAddress(String newAddress) {
-		address = newAddress;
+		this.address = newAddress;
 	}
-	
+
 	public String getAddress() {
 		return address;
 	}
@@ -58,35 +59,25 @@ public class EmployeeInfo implements Employee {
 	public String getCompanyName() {
 		return companyName;
 	}
+
 	
-	public void setCompanyName(String companyName) {
-		this.companyName = companyName;
-	}
-	
-	public void setDepartment(String department) {
-		this.department = department;
-	}
-	
-	public void setBenefit(String benefit) {
-		this.benefit = benefit;
-	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public int getEmployeeID() {
 		return employeeID;
 	}
-	
+
 	public void setEmployeeID(int employeeID) {
 		this.employeeID = employeeID;
 	}
-	
+
 	@Override
 	public String employeeName() {
 		return name;
@@ -95,7 +86,7 @@ public class EmployeeInfo implements Employee {
 	@Override
 	public void assignDepartment() {
 		// TODO Auto-generated method stub
-		System.out.println (department);
+		System.out.println(department);
 	}
 
 	@Override
@@ -105,11 +96,19 @@ public class EmployeeInfo implements Employee {
 
 	@Override
 	public void benefitLayout() {
-		System.out.println( benefit);
+		System.out.println(benefit);
 	}
+
+	@Override
+	public double monthlySalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	@Override
 	public String toString() {
-		return "EmployeeInfo [department=" + department + ", benefit=" + benefit
-				+ ", name=" + name + ", address=" + address + ", employeeID=" + employeeID + "]";
+		return "EmployeeInfo [department=" + department + ", benefit=" + benefit + ", name=" + name + ", address="
+				+ address + ", employeeID=" + employeeID + "]";
 	}
+
 }

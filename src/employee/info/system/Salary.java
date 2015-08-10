@@ -6,7 +6,6 @@ public class Salary extends EmployeeCommonFeature {
 	private static double salary; // Annual salary
 	private static double bonus;
 	
-	static EmployeeInfo empInfo = new EmployeeInfo();
 	
 	public Salary(String name, int number, double salary) {
 		super(name,  number,salary );

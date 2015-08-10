@@ -2,31 +2,122 @@ Please answer the below core-java Questions:
 
 
 What jdk contains or composed of and define each components?
+Ans: java development toolkit 
+
 What is IDE?
+Ans: Integrated Development Environment 
+
 What are the IDEs available in the market to support java?
+Eclipse, Netbeans, IntelJ
+
 Explain the entire java life cycle.
+Editor -> Source code -> Java Compiler(Javac) -> Bytecodes(.class) -> Java Virtual Machine(JVM)-> Operating System 
 what is class?
+A class is blue print or templates for creating different opbjects
+
 What is object?
+An object is an instance of class where it define the characteristics of the class
+
 What is the entry point of an application?
+main method is the entry point
+
 Why main is static?
+when a java program execute, it looks for public static main(String[]args) method. The reason main method is 
+static, so that it could be called by JVM without creating an instance of the class.
+
 What is the difference between an Interface and Abstract class?
+Java interface are implicitly abstract and cannot have implementations. 
+A Java abstract class can have instance methods that implements a default behavior.
+Variables declared in a Java interface is by default final. An  abstract class may 
+contain non-final variables. Members of a Java interface are public by default. A 
+Java abstract class can have private, protected method. Java interface should be 
+implemented using keyword “implements”; A Java abstract class should be extended
+using keyword “extends”. An abstract class can extend another Java class and implement
+multiple Java interfaces. A Java class can implement multiple interfaces but it can 
+extend only one abstract class. 
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+Interface is absolutely abstract and cannot be instantiated. A Java abstract class also 
+cannot be instantiated, but can be invoked. any variable declare in the interface are final or constant. 
+one can creat an instance of an anonymous subclass of your abstract class. And then it could be invoked 
+the method from abstract class reference pointing to subclass object 
+
 what is Access Specifier?
+public and no modifier – class level, easily Access.
+private – members can only access.
+protected – CAN be accessed from ‘same package’ and a subclass existing in any package can access.
+
 What is OOP ? Define each feature of java OOP.
+OOP -> Object Oriented Programming 
+Encapsulation: encapsulation is the hiding of data implementation by restricting access to accessors and
+mutators
+Abstraction: Abstraction is a process of hiding the implementation details and showing only functionality to the user. 
+Inheritance: In java one class could derived form another. It's to get the fields and methods of its superclass, this
+feature called inheritance.
+Polymorphism: Polymorphism is the ability of an object to take many forms. 
+
 What is API? Name list of API that you have used so far.
+API -> Application Programming Interface
+List of API -> CORE Java API, OSGi, JMF, Google, Android, SE, ME , JSP
+
 Does java support multiple inheritance?
+Java support multiple inheritance.
+
 What is method overloading and when it happens?
+Method overloading allows class to have multiple methods with the same name but different signature type.
+
 What is method overriding and when it happens?
+If a class inherits a method from its super class, then the method could be overridden if it't not final;
+
 Explain exceptions in java and how to handle it.
+In Java, exceptions are objects. during a program compilation if the execution of the program behave 
+unexpectedly, exception occurred. In java try-catch and throw exception two most popular way to handle exception   
+
 What is static keyword in java? How it has been used in variables and methods ?
+The static keyword in Java means that the variable or function is shared between all instances of that class.
+In class variable or method with static key word, variable can be access by all the methods and the method could
+be access without class initiation. 
+
 What is final and how it has been used variables and methods?
+In Java we use final keyword to variables to make its values not to be changed.
+
 What is final, finally and finalize?
+Key word final is used toward the unchangeable variable.
+finally is used in a try/catch statement to execute code always
+finalize is called when an object is garbage collected. You rarely need to override it
+
 What is a constructor ?
+Constructor is a special type of method that doesn't return anything, the name has to same name as class, 
+and takes multiple parameters in order to initiate object. 
+
 What is "this" keyword in java ?
+The this keyword is used when you need to use class global variable in the constructors. this is a reference to 
+the current object — the object whose method or constructor is being called. 
+
 What is "super" keyword in java?
+The keyword "Super" is used inside a sub-class method definition to call a method defined in the super class.
+Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword.
+
 What is JVM stand for ?
+Java virtual machine
+
 What version of java are you using?
+1.8
+
 What is JAR stand for ?
+Java Archive
+
 What is compile time and run time?
+When an application is executing or running in JVM, it is called runtime.
+A compile time error is a problem such as a syntax error or missing file reference that prevents the program from successfully compiling.
+
 What is heap?
+The Java heap is the amount of memory allocated to applications running in the JVM. 
+
 How java manage it's memory?
+Local variables live on the stack
+– Allocated at method invocation time
+– Deallocated when method returns
+Other data lives on the heap
+– Memory is allocated with new
+– But never explicitly deallocated
