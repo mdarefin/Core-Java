@@ -1,42 +1,69 @@
 Please answer the below Data Structure Questions:
 
-
+Need to check the answer, seems not correct. 
 1) why do we need data structure?
-
+:-use of an appropriate data structure enables a computer system to perform its task
+:-more efficiently, by how it retrieves and stores data.
 
 2) List out the areas in which data structures are applied extensively?
+:-compiler design, simulation, A.I. , Numerical analysis and statistics
 
 3) what is an Array?
+:- a series of Objects in which all of them are the same size and shape
+:-example int [] arr=new int[10]; is an integer array of size 10.
 
 4) what is the difference between the Array and ArrayList?
-
+:-In terms of performance Array and ArrayList provides similar performance in
+:-terms of constant time for adding or getting element if you know index.
+:-Though automatic resize of ArrayList may slow down insertion a bit.
+ 
 5) what is LinkedList?
+:- an ordered set of data elements, each containing a link to its successor(and sometimes its predecessor).
 
 6) what is queue?
+:-a collection for holding elements prior to processing.
 
 7) what is stack?
+:- a collection with two operations, push to add and pop to remove
 
 8) what is FIFO and LIFO?
+:-FIFO: first in first out; LIFO: last in first out
 
 9) what is the order of complexity?
+:-is finding the upper limit for the growth of some function;
+:-for example if our sort algorithms require a constant amount of 
+:-extra space then its space complexity is O(n) 
 
 10)what is the best case to search an element from an array?
+:- depends if the desired element is the first element in the array then
+that case would be the best.
 
 11)what is the worst case to search an element from an array?
+:-it is difficult to determine teh worst case
 
 12) what is tree in data structure?
+:- abstract data type 
 
 13) what is graph in data structure?
+:-a structure consisting of a set of arrays and a set of edges
 
 14) what is the difference between the HashTable and HashMap?
+:-HashMap is non synchronized and not thread safe whereas HashTable is thread safe and synchronized.
 
 15) What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+:-RDBMS:Array; Network data model: Graph; Hierarchical data model: Trees
 
 16) How HashMap works in java?
+In hashing, hash functions are used to link key and value in 
+:-HashMap. Objects are stored by calling put(key, value) method 
+:-of HashMap and retrieved by calling get(key) method
 
 17)What is Big-(O)-notation?
+:- describes how long an algorithm takes to run
 
 18)Outlined different kind of sorting algorithm with time complexity?
+:-QuickSort: Best(O(n log(n)); Average(O(nlog(n));worst(O(N^2)
+:-InsertionSort: Best(O(n));Average(O(n^2));worst(O(n^2))
 
 19) Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of adding element.
