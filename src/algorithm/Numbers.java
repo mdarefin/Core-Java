@@ -8,7 +8,7 @@ public class Numbers {
 	 * Show all the different kind of sorting algorithm use by applying into
 	 * (num array). Display the execution time for each sorting.
 	 */
-	final static long startTime = System.currentTimeMillis();
+	static long startTime = System.currentTimeMillis();
 
 	public static void main(String[] args) {
 
@@ -73,6 +73,7 @@ public class Numbers {
 		final long endTime = System.currentTimeMillis();
 		final long executionTime = endTime - startTime;
 		System.out.println("Total Execution Time in ms : " + executionTime + " sec");
+		startTime = System.currentTimeMillis();
 	}
 
 }
